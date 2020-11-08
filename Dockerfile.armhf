@@ -4,7 +4,8 @@
 # https://github.com/nbr23/youtube-dl-server
 #
 
-FROM python:alpine
+FROM arm32v6/python:alpine
+COPY qemu-arm-static /usr/bin/
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
