@@ -6,6 +6,7 @@
 
 FROM python:alpine
 
+COPY qemu-arm-static /usr/bin
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
